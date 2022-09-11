@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+
+# FE mentor stuff
+*.sketch
+*.xd
+*.fig
+.DS_Store
