@@ -11,6 +11,7 @@
   "author": "Àlex Castelo Martínez",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^2.9.14"
   },
   "devDependencies": {
