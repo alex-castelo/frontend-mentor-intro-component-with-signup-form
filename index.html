@@ -17,22 +17,22 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <div class="content-wrapper">
+    <div class="content-wrapper" role="main">
       <div class="content">
-        <div class="left">
+        <section role="info" class="left">
           <h1 class="title">Learn to code by watching others</h1>
           <p class="description">
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is freat, but understanding how developers think
             is invaluable.
           </p>
-        </div>
-        <div class="right">
+        </section>
+        <section class="right">
           <button class="pricing-btn">
             <strong>Try it free 7 days</strong> then $20/mo. thereafter
           </button>
           <div class="card">
-            <form class="signup-form" action="/main.js" id="form">
+            <form class="signup-form" action="/main.js" id="form" role="form">
               <div class="form-input">
                 <label class="custom-field">
                   <input
@@ -102,12 +102,14 @@
                 Claim your free trial
               </button>
             </form>
-            <p class="consent">
-              By clicking the button you are agreeing to our
-              <a href="#"><strong>Terms and Services</strong></a>
-            </p>
+            <section role="contentinfo">
+              <p class="consent">
+                By clicking the button you are agreeing to our
+                <a href="#"><strong>Terms and Services</strong></a>
+              </p>
+            </section>
           </div>
-        </div>
+        </section>
       </div>
     </div>
 

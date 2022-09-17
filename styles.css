@@ -46,6 +46,7 @@ label:focus-visible {
 
 .content,
 .content-wrapper {
+  display: flex;
   min-height: 100%;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -57,9 +58,8 @@ label:focus-visible {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
   padding: 1rem;
@@ -89,7 +89,7 @@ label:focus-visible {
 }
 
 .submit-btn {
-  background-color: var(--color-green);
+  background-color: mediumseagreen;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -128,11 +128,11 @@ input {
 
 .consent {
   margin-top: 1.5rem;
-  color: var(--color-blue-gray);
+  color: var(--color-blue);
 }
 
 .consent > a {
-  color: var(--color-red);
+  color: red;
   text-decoration: none;
 }
 
@@ -155,17 +155,15 @@ input {
   }
 
   .content {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 1440px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   .left,
   .right {
-    padding: 3rem;
-    width: 50%;
+    margin: auto 0;
+    padding: 2rem;
   }
 
   .title {
